@@ -4,11 +4,20 @@ using namespace std;
 
 Joueur::Joueur()
 {
-    //ctor
+    Joueur("Joueur", 50);
 }
-Joueur::Joueur(string _nom, int niveau)
+Joueur::Joueur(string _nom, int _niveauJoueur)
 {
-    //ctor
+    nom=_nom;
+    niveauJoueur=_niveauJoueur;
+     if(_niveauJoueur > 100)
+    {
+        niveauJoueur = 100;
+    }
+    else
+    {
+        niveauJoueur=_niveauJoueur;
+    }
 }
 
 Joueur::~Joueur()
@@ -18,5 +27,5 @@ Joueur::~Joueur()
 
 void Joueur::Afficher()
 {
-
+    cout << "Nom : " << nom << '\t' << "Niveau du joueur : " << niveauJoueur << '\t' << "Nombre de buts : " << NombreButs << '\n';
 }
