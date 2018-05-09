@@ -35,10 +35,14 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Championnat.h" />
+		<Unit filename="include/Equipe.h" />
 		<Unit filename="include/Joueur.h" />
+		<Unit filename="include/Match.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Championnat.cpp" />
+		<Unit filename="src/Equipe.cpp" />
 		<Unit filename="src/Joueur.cpp" />
+		<Unit filename="src/Match.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
