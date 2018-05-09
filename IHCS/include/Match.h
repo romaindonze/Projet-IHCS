@@ -10,6 +10,17 @@ class Match
     public:
         Match(string,Equipe&,Equipe&);
 
+        //getter
+        int getScoreHote();
+        int getScoreInvite();
+        bool getTermine();
+
+        //setter
+        void setScoreHote(int);
+        void setScoreInvite(int);
+        void setTermine();
+
+        //Attribus
         string Lieu;
         Equipe *Hote;
         Equipe *invite;
@@ -17,6 +28,7 @@ class Match
     protected:
 
     private:
+        //Attribus
         int scoreHote;
         int scoreInvite;
         bool termine;
