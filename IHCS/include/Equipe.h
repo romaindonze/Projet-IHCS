@@ -18,11 +18,13 @@ class Equipe
         //méthodes
         void Engager(Joueur &_joueur);
         void Afficher();
+        void AfficherPalmares();
 
         //Attribus
         string nom;
         list<Joueur> listeJoueur;
         short ID;
+        list<std::string> palmares;
 
         //getter + setter
         int getNiveauEquipe();

@@ -157,3 +157,39 @@ void Championnat::computeClassement(Match &m)
     }
 
 }
+
+void Championnat::afficherClassement()
+{
+    tools::afficherSeparation();
+    listEquipe.sort(tools::Compare);
+
+    cout << "Classement du championnat " << this->nom << ":" << endl;
+    cout << endl;
+    list<Equipe*>::iterator it;
+    int i=1;
+    for(it = listEquipe.begin();it!=listEquipe.end();it++)
+    {
+        cout << i <<" : " <<(*it)->nom << " : " << (*it)->getPointEquipe()<<endl;
+        i++;
+    }
+
+    cout << endl;
+    tools::afficherSeparation();
+}
+
+void Championnat::finChampionnat()
+{
+    list<Equipe*>::iterator it;
+    int i=1;
+    for(it = listEquipe.begin();it!=listEquipe.end();it++)
+    {
+        (*it)->setPointEquipe(0);
+
+        if (i==1)
+            {
+                (*it)->palmares.push_front(this->nom);
+            }
+        i++;
+    }
+
+}

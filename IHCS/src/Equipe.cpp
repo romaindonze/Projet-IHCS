@@ -2,6 +2,7 @@
 #include <iterator>
 #include <iostream>
 #include <iomanip>
+#include "tools.h"
 using namespace std;
 
 Equipe::Equipe()
@@ -40,6 +41,30 @@ void Equipe::Afficher()
     }
     cout << '\n';
     cout << "--------------------------------------------------------"<< endl;
+}
+
+void Equipe::AfficherPalmares()
+{
+    tools::afficherSeparation();
+    list<string>::iterator it;
+    int i =1;
+
+    cout << this->nom << endl;
+    if(this->palmares.size()== 0)
+        {
+            cout <<  "Aucun championnat remporte. " << endl;
+        }
+    else
+        {
+
+            cout<< "Liste des chamionnats remportes "<< ": " << endl;
+        for(it = palmares.begin();it!=palmares.end();it++)
+            {
+            cout<< i << ") " << *it <<endl ;
+            i++;
+            }
+        }
+        tools::afficherSeparation();
 }
 
 int Equipe::getNiveauEquipe()

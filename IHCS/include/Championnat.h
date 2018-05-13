@@ -17,8 +17,10 @@ class Championnat
         void AgenderMatch();
         void jouerMatch(short,short);
         void reinitialiser();
+        void finChampionnat();
         void afficherEquipes();
         void afficherMatchesJoues();
+        void afficherClassement();
 
     protected:
 
