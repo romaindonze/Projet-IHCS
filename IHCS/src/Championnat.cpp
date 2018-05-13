@@ -1,11 +1,42 @@
 #include "Championnat.h"
 
-Championnat::Championnat()
+
+Championnat::Championnat(string nom)
 {
-    //ctor
+    this->nom=nom;
 }
 
 Championnat::~Championnat()
 {
     //dtor
+}
+
+void Championnat::AjouterEquipe(Equipe &e)
+{
+
+}
+
+void Championnat::AgenderMatch()
+{
+
+}
+
+void Championnat::jouerMatch(short t1, short t2)
+{
+
+}
+
+void Championnat::reinitialiser()
+{
+
+}
+
+void Championnat::afficherEquipes()
+{
+
+}
+
+void Championnat::afficherMatchesJoues()
+{
+
 }
