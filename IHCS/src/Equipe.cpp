@@ -46,3 +46,12 @@ int Equipe::getNiveauEquipe()
 {
     return niveauEquipe;
 }
+
+int Equipe::getPointEquipe()
+{
+    return PointEquipe;
+}
+void Equipe::setPointEquipe(int point)
+{
+    this->PointEquipe = point;
+}

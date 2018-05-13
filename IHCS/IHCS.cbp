@@ -38,11 +38,13 @@
 		<Unit filename="include/Equipe.h" />
 		<Unit filename="include/Joueur.h" />
 		<Unit filename="include/Match.h" />
+		<Unit filename="include/tools.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Championnat.cpp" />
 		<Unit filename="src/Equipe.cpp" />
 		<Unit filename="src/Joueur.cpp" />
 		<Unit filename="src/Match.cpp" />
+		<Unit filename="src/tools.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

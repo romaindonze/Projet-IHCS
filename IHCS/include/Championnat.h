@@ -10,6 +10,7 @@ class Championnat
 {
     public:
         Championnat(string);
+        Championnat(string,string[],int);
         virtual ~Championnat();
 
         void AjouterEquipe(Equipe&);
@@ -23,9 +24,12 @@ class Championnat
 
     private:
 
+        void computeClassement(Match&);
+
         list<Match> listMatch;
         list<Equipe*> listEquipe;
         string nom;
+        string tabLieu[20];
 };
 
 #endif // CHAMPIONNAT_H

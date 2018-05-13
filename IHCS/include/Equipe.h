@@ -24,14 +24,18 @@ class Equipe
         list<Joueur> listeJoueur;
         short ID;
 
-        //getter
+        //getter + setter
         int getNiveauEquipe();
+        int getPointEquipe();
+        void setPointEquipe(int);
 
     protected:
 
     private:
         //Attribus
         int niveauEquipe;
+        int SommeNiveauEquipe;
+        int PointEquipe;
 };
 
 #endif // EQUIPE_H
