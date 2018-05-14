@@ -12,73 +12,71 @@ int main()
 {
     //JOUEURS
 
-	Joueur j1("Crosby", 400);
+	Joueur joueur1("Crosby", 101);
+	Joueur joueur2("McDavid", 99);
+	Joueur joueur3("Karlsson", 98);
+	Joueur joueur4("Price", 97);
+	Joueur joueur5("Kane", 96);
 
-	Joueur j2("Kane", 95);
-	Joueur j3("Ovechkin", 94);
-	Joueur j4("Brodeur", 97);
-	Joueur j5("McDavid", 98);
-	Joueur j55("Hischier", 85);
+	Joueur joueur6("James", 1554);
+	Joueur joueur7("Durant", 90);
+	Joueur joueur8("Leonard", 85);
+	Joueur joueur9("Curry", 89);
+	Joueur joueur10("Westbrook", 75);
 
-	Joueur j6("Kopitar", 93);
-	Joueur j7("Daughty", 90);
-	Joueur j8("Carter", 85);
-	Joueur j9("Quick", 92);
-	Joueur j10("Kempe", 88);
+	Joueur joueur11("Baldi le nul",0);
+	Joueur joueur12("Jo la torpille", 0);
+	Joueur joueur13("Hakim du bled", 0);
+	Joueur joueur14("Thomas le hockeyeur", 1);
+	Joueur joueur15("la mere a Baldi", 99);
 
-	Joueur j11("Obama",45);
-	Joueur j12("Poutine", 99);
-	Joueur j13("Macron", 13);
-	Joueur j14("Adolph", 80);
-	Joueur j15("Trump", 16);
+	Joueur joueur16("Iron man", 14);
+	Joueur joueur17("Hulk", 56);
+	Joueur joueur18("Federer", 1555);
+	Joueur joueur19("Spiderman", 8);
+	Joueur joueur20("Romain aka Musclor (plus fort que Hulk encore)", 57);
 
-	Joueur j16("Durif", 14);
-	Joueur j17("BobylaPointe", 56);
-	Joueur j18("Mader", 1);
-	Joueur j19("Spiderman", 8);
-	Joueur j20("Batman", 50);
+	Joueur joueur21("l'homme moyen", 50);
 
 
 
 	//EQUIPES
 
-	Equipe equipe1("NULLOS",1);
-	Equipe equipe2("LA KINGS",2);
-	Equipe equipe3("DICTATOR",3);
-	Equipe equipe4("REPLTILIEN", 4);
-	Equipe equipe5("POWER RANGERS",5);
+	Equipe equipe1("l'equipe moyenne",1);
+	Equipe equipe2("les vrais joueurs de hockeys",2);
+	Equipe equipe3("les joueurs de NBA perdus (mais fort)",3);
+	Equipe equipe4("la classe + la maman a Baldi", 4);
+	Equipe equipe5("AVENGERS",5);
 
 
 	//MERCATO
 
 
-	equipe1.Engager(j1);
+	equipe1.Engager(joueur21);
 
-	equipe5.Engager(j1);
-	equipe5.Engager(j2);
-	equipe5.Engager(j3);
-	equipe5.Engager(j4);
-	equipe5.Engager(j5);
-	equipe5.Engager(j55);
+	equipe2.Engager(joueur1);
+	equipe2.Engager(joueur2);
+	equipe2.Engager(joueur3);
+	equipe2.Engager(joueur4);
+	equipe2.Engager(joueur5);
 
+	equipe3.Engager(joueur6);
+	equipe3.Engager(joueur7);
+	equipe3.Engager(joueur8);
+	equipe3.Engager(joueur9);
+	equipe3.Engager(joueur10);
 
-	equipe2.Engager(j6);
-	equipe2.Engager(j7);
-	equipe2.Engager(j8);
-	equipe2.Engager(j9);
-	equipe2.Engager(j10);
+	equipe4.Engager(joueur11);
+	equipe4.Engager(joueur12);
+	equipe4.Engager(joueur13);
+	equipe4.Engager(joueur14);
+	equipe4.Engager(joueur15);
 
-	equipe3.Engager(j11);
-	equipe3.Engager(j12);
-	equipe3.Engager(j13);
-	equipe3.Engager(j14);
-	equipe3.Engager(j15);
-
-	equipe4.Engager(j16);
-	equipe4.Engager(j17);
-	equipe4.Engager(j18);
-	equipe4.Engager(j19);
-	equipe4.Engager(j20);
+	equipe5.Engager(joueur16);
+	equipe5.Engager(joueur17);
+	equipe5.Engager(joueur18);
+	equipe5.Engager(joueur19);
+	equipe5.Engager(joueur20);
 
 
     equipe1.Afficher();
@@ -93,12 +91,12 @@ int main()
 
 	string tabLieu[nbDeLieu];
 
-	tabLieu[0]="PARIS";
-    tabLieu[1]="ROME";
-    tabLieu[2]="BERNE";
-    tabLieu[3]="LONDRES";
-    tabLieu[4]="MOSCOU";
-    tabLieu[5]="TOKYO";
+	tabLieu[0]="Chez Baldi";
+    tabLieu[1]="a la pati";
+    tabLieu[2]="au terrain de foot";
+    tabLieu[3]="rdv piscine";
+    tabLieu[4]="Tavannes";
+    tabLieu[5]="Tramelan";
 
 
 	Championnat chpt1("IHCS",tabLieu,nbDeLieu);
