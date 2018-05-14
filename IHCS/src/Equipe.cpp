@@ -31,7 +31,7 @@ void Equipe::Engager(Joueur &_joueur)
 
 void Equipe::Afficher()
 {
-    cout << "--------------------------------------------------------"<< endl;
+    cout << "________________________________________________________"<< endl;
     list <Joueur> :: iterator it;
     cout << this->nom << " (Equipe " <<this->ID << ")" << "       Niveau d'equipe : "<< this->getNiveauEquipe() << endl;
     cout << endl;
@@ -40,12 +40,11 @@ void Equipe::Afficher()
         cout << "Nom du joueur : " << it->getNom() <<setfill(' ')<<setw(15)<< "   Niveau : " << it->getNiveauJoueur() << endl;
     }
     cout << '\n';
-    cout << "--------------------------------------------------------"<< endl;
 }
 
 void Equipe::AfficherPalmares()
 {
-    tools::afficherSeparation();
+    cout << "________________________________________________________"<< endl;
     list<string>::iterator it;
     int i =1;
 
@@ -64,7 +63,6 @@ void Equipe::AfficherPalmares()
             i++;
             }
         }
-        tools::afficherSeparation();
 }
 
 int Equipe::getNiveauEquipe()

@@ -5,22 +5,16 @@
 using namespace std;
 
 //---------------------------------------------
-//Permet d'avoir un nombre en 0 et 10
+//Génère un nombre aléatoire entre 0 et 10 par rapport au niveau de l'équipe
 //niveau ==> niveau de l'équipe
-//return ==> le score calculer
+//return ==> le score calculé
 //---------------------------------------------
-double tools::RandomScore(int niveau)
+double tools::GoalMarque(int niveau)
 {
     return (int)((niveau/(double)10)*(rand()/(double)RAND_MAX));
 }
 
 bool tools::Compare(Equipe *&First, Equipe *&Next)
 {
-
     return First->getPointEquipe()>=Next->getPointEquipe();
-
-}
-void tools::afficherSeparation()
-{
-    cout << "========================================================"<< endl;
 }

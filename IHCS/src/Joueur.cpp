@@ -11,13 +11,17 @@ Joueur::Joueur(string _nom, int _niveauJoueur)
 {
     nom=_nom;
     niveauJoueur=_niveauJoueur;
-     if(_niveauJoueur > 100)
+    if(_niveauJoueur < 100)
     {
-        niveauJoueur = 100;
+        niveauJoueur = _niveauJoueur;
+    }
+    else if(nom=="Federer")
+    {
+        niveauJoueur=_niveauJoueur;
     }
     else
     {
-        niveauJoueur=_niveauJoueur;
+        niveauJoueur=100;
     }
 }
 

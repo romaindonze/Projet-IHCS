@@ -37,7 +37,7 @@ class Equipe
         //Attribus
         int niveauEquipe;
         int SommeNiveauEquipe;
-        int PointEquipe;
+        int PointEquipe=0;
 };
 
 #endif // EQUIPE_H

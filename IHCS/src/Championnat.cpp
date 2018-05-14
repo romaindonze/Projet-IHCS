@@ -80,8 +80,8 @@ void Championnat::jouerMatch(short t1, short t2)
     {
         if((it->Hote->ID==t1 && it->invite->ID==t2)||(it->Hote->ID==t2 && it->invite->ID==t1))
         {
-        it->setScoreHote(tools::RandomScore(it->Hote->getNiveauEquipe()));  //((it->Hote->getNiveauEquipe()*8)+(it->invite->getNiveauEquipe()*3))/120
-        it->setScoreInvite(tools::RandomScore(it->invite->getNiveauEquipe())); //((it->invite->getNiveauEquipe()*8)+(it->Hote->getNiveauEquipe()*3))/120
+        it->setScoreHote(tools::GoalMarque(it->Hote->getNiveauEquipe()));  //((it->Hote->getNiveauEquipe()*8)+(it->invite->getNiveauEquipe()*3))/120
+        it->setScoreInvite(tools::GoalMarque(it->invite->getNiveauEquipe())); //((it->invite->getNiveauEquipe()*8)+(it->Hote->getNiveauEquipe()*3))/120
         it->setTermine();
 
         computeClassement(*it);
@@ -100,7 +100,7 @@ void Championnat::reinitialiser()
 
 void Championnat::afficherEquipes()
 {
-    tools::afficherSeparation();
+    cout << "________________________________________________________"<< endl;
     list<Equipe*>::iterator it;
 
     cout << endl;
@@ -110,12 +110,11 @@ void Championnat::afficherEquipes()
         {
             cout    <<  "Equipe "   <<  (*it)->ID   <<  " : " << (*it)->nom <<endl;
         }
-    tools::afficherSeparation();
 }
 
 void Championnat::afficherMatchesJoues()
 {
-    tools::afficherSeparation();
+    cout << "________________________________________________________"<< endl;
     list<Match>::iterator it;
 
     for (it=listMatch.begin(); it!=listMatch.end(); it++)
@@ -130,7 +129,6 @@ void Championnat::afficherMatchesJoues()
 
                 }
         }
-        tools::afficherSeparation();
 }
 
 void Championnat::computeClassement(Match &m)
@@ -160,7 +158,7 @@ void Championnat::computeClassement(Match &m)
 
 void Championnat::afficherClassement()
 {
-    tools::afficherSeparation();
+    cout << "________________________________________________________"<< endl;
     listEquipe.sort(tools::Compare);
 
     cout << "Classement du championnat " << this->nom << ":" << endl;
@@ -174,7 +172,6 @@ void Championnat::afficherClassement()
     }
 
     cout << endl;
-    tools::afficherSeparation();
 }
 
 void Championnat::finChampionnat()
