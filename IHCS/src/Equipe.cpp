@@ -26,7 +26,7 @@ void Equipe::Engager(Joueur &_joueur)
 {
     listeJoueur.push_back(_joueur);
 
-    niveauEquipe=(niveauEquipe+_joueur.getNiveauJoueur())/listeJoueur.size();
+    niveauEquipe=niveauEquipe+_joueur.getNiveauJoueur()/5;
 }
 
 void Equipe::Afficher()
