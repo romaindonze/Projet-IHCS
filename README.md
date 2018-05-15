@@ -8,7 +8,7 @@ A la fin de chaque match, un score est obtenu ce qui donnera un certain nombre d
 
 ## Démarrer
 Les instructions ci-dessous vous permettront d'obtenir une copie du projet opérationnelle sur votre machine locale
-à des fins de développement et de test. Voir déploiement pour les notes sur la façon de déployer le projet sur un système actif.
+à des fins de développement et de test.
 
 ### Prérequis
 ```
