@@ -15,7 +15,7 @@ Joueur::Joueur(string _nom, int _niveauJoueur)
     {
         niveauJoueur = _niveauJoueur;
     }
-    else if(nom=="Federer")
+    else if(nom=="Federer" || nom=="Fatso")
     {
         niveauJoueur=_niveauJoueur;
     }

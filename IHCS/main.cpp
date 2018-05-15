@@ -37,6 +37,7 @@ int main()
 	Joueur joueur20("Romain aka Musclor (plus fort que Hulk encore)", 57);
 
 	Joueur joueur21("l'homme moyen", 50);
+	Joueur joueur22("Fatso", -3);
 
 
 
@@ -53,6 +54,7 @@ int main()
 
 
 	equipe1.Engager(joueur21);
+	equipe1.Engager(joueur22);
 
 	equipe2.Engager(joueur1);
 	equipe2.Engager(joueur2);
@@ -149,7 +151,7 @@ int main()
 
 
     //NOUVELLE SAISON
-    Championnat chpt2("Coupe Stanley");
+    Championnat chpt2("Coupe au bol");
 
 
     //AJOUTER EQUIPE AU CHAMPIONNAT
